@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Color Variables */
+    --light-green: #93cb52;
+    --light-green-dark: #7ab436;
+    --light-black: #333;
+    --light-gray: #f4f4f4;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */ 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    line-height: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.4rem;
+    margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container{
+    max-width: 110rem;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: var(--light-green);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.l-heading{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.m-heading{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.s-heading{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.bg-light{
+    background: var(--light-gray);
+    color: var(--light-black);
+}
+
+.bg-dark{
+    background: var(--light-black);
+    color: #fff;   
+}
+
+.bg-primary{
+    background: var(--light-green);
+    color: #fff;
+}
+.py-1{ padding: 2rem 0; }
+.py-2{ padding: 3rem 0; }
+.py-3{ padding: 4rem 0; }
+.py-4{ padding: 5rem 0; }
+.py-5{ padding: 6rem 0; }
+
+.p-1{ padding: 2rem; }
+.p-2{ padding: 3rem; }
+.p-3{ padding: 4rem; }
+.p-4{ padding: 5rem; }
+.p-5{ padding: 6rem; }
+
+.list{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 1rem;
+    border-bottom: 1px dotted #444;
+    font-size: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: var(--light-green);
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}   
+
+.btn:hover{
+    background: var(--light-green-dark);
+}
+
+.btn-dark{
+    display: inline-block;
+    background: var(--light-black);
+    color: #fff;
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+/* Navbar */
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: var(--light-black);
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1.7rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 2rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a:hover{
+    background: var(--light-green);
+    border-radius: 0.5rem;
+}
+
+/* Showcase */
+#showcase{
+    background: #333 url('../image_resources/architecture-bird-s-eye-view-buildings-2096698\ \(1\).jpg') no-repeat center center / cover;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;    
+    background-color: rgba(0,0,0,0.6)
+}
+
+/* Section: What */
+
+#what .Items{
+    display: flex;
+}
+
+#what .Items .Item{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+#what .Items .Item i{
+    background: var(--light-green);
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+}
+
+#what .Items .Item h3{
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+#what .Items .Item p{
+    font-size: 1.4rem;
+}
+
+/* Section: Who We Are */
+#who{
+    display: flex; 
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url('../image_resources/people.jpg') no-repeat center center / cover;
+
+}
+
+#who .who-text p{
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Section: Our Client */
+#client .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client .items img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin: 2.5rem 0;
+}
+
+/* Section: Contact */
+#contact{
+    display: flex;
+}
+
+#contact p{
+    font-size: 1.4rem;
+}
+
+#contact .map, #contact .contact-form{
+    flex: 1;
+}
+
+#contact .map h1{
+    display: flex;  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contact .contact-form .form-group{
+    margin: 1rem;
+}
+
+#contact .contact-form .form-group label{
+    display: block;
+    font-size: 1.4rem;
+}
+
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea{
+    width: 100%;
+    padding: 1rem   ;
+}
+

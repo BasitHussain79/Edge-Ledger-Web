@@ -1,0 +1,12 @@
+/* Align Icon to Left */
+#what .Items .Item{
+    display: flex;
+    text-align: left;
+}
+
+/* Position Icon */
+#what .Items .Item i{
+    margin-right: 2rem;
+    align-self: center;
+    margin-bottom: 0;
+}

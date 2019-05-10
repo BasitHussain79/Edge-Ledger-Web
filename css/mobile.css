@@ -1,0 +1,60 @@
+#what .Items{
+    display: block;
+    padding: 1.6rem;
+}
+
+/* Align Icon to Left */
+#what .Items .Item{
+    display: flex;
+    text-align: left;
+}
+
+/* Position Icon */
+#what .Items .Item i{
+    margin-right: 2rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+/* Smart Phones */
+
+@media only screen and (max-width: 500px){
+
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #navbar ul{
+        padding: 0.5rem;
+    }
+
+    #who{
+        display: block;
+    }
+
+    #who .who-img{
+        display: none;
+    }
+
+    #client .items img{
+        width: 80%;
+    }
+
+    #client .items div:last-child{
+        display: none;
+    }
+
+    #contact{
+        flex-flow: column;
+    }
+
+    #contact .map{
+        display: none;
+    }
+}
